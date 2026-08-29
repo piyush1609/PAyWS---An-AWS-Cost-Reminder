@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>AWS Spend Jumpscare</title></head>
+<body>
+  <main>
+    <div class="brand"><span>💸</span><div><h1>pAyWS — Spend Jumpscare</h1><p>Financial awareness, but make it loud.</p></div></div>
+    <label class="switch-row"><span><strong>Spend alerts</strong><small>Show alerts for likely billable services</small></span><input id="enabled" type="checkbox"><i></i></label>
+    <label class="field">Sound
+      <select id="sound">
+        <option value="auto">Auto — match AWS service</option><option value="register">Cash register “cha-ching” 💰</option><option value="coins">Cartoon money drain / falling coins 🪙</option><option value="windowsError">Windows-style error ❌</option><option value="sadTrombone">Sad trombone 🎺</option><option value="airRaid">Air-raid siren 🚨</option><option value="ohNo">“Oh no!” reaction</option><option value="violin">Dramatic violin sting 🎻</option><option value="recordScratch">Record scratch 🎵</option><option value="boom">Explosion / boom 💥</option><option value="creditDecline">Credit-card decline 💳</option><option value="tinyViolin">Tiny violin 🎻</option><option value="levelUp">Game level up 🎮</option><option value="horror">Horror movie sting 👻</option><option value="casino">Casino slot-machine win 🎰</option><option value="gasp">Crowd gasp 😱</option><option value="missionAlarm">Mission Impossible alarm 🚨</option><option value="clock">“Two hours later” clock ⏰</option><option value="dialup">Dial-up disconnect 📞</option><option value="evilLaugh">Evil laugh 😈</option><option value="funeralBell">Funeral / church bell 🔔</option><option value="fhaaa">Fhaaaa rise</option><option value="chaChing">Cha-ching</option>
+      </select>
+    </label>
+    <label class="field">Volume <output id="volume-output">65%</output><input id="volume" type="range" min="0" max="100" value="65"></label>
+    <label class="field">Repeat cooldown
+      <select id="cooldownSeconds"><option value="10">10 seconds</option><option value="18">18 seconds</option><option value="30">30 seconds</option><option value="60">1 minute</option></select>
+    </label>
+    <button id="test" class="test">▶ Test the regret</button>
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+  <script src="popup.js"></script>
+</body></html>

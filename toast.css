@@ -1,0 +1,9 @@
+#aws-spend-jumpscare-toast { position: fixed; z-index: 2147483647; top: 24px; right: 24px; width: min(360px, calc(100vw - 32px)); display: flex; gap: 14px; padding: 17px 38px 17px 16px; border: 1px solid #ffb46c; border-radius: 16px; color: #fff7ed; background: linear-gradient(135deg, #351708, #7c2d12); box-shadow: 0 18px 48px rgba(0,0,0,.35); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; animation: asj-in .34s cubic-bezier(.2,.9,.3,1.2); }
+#aws-spend-jumpscare-toast * { box-sizing: border-box; }
+.asj-icon { display: grid; place-items: center; flex: 0 0 46px; height: 46px; border-radius: 13px; font-size: 24px; background: rgba(255, 196, 113, .18); }
+.asj-content p { margin: 4px 0 0; font-size: 13px; line-height: 1.35; color: #fed7aa; }
+.asj-content strong { font-size: 16px; letter-spacing: -.15px; }
+.asj-kicker { margin: 0 0 5px !important; font-size: 10px !important; font-weight: 800; letter-spacing: 1px; color: #fdba74 !important; }
+.asj-close { position: absolute; top: 7px; right: 9px; border: 0; color: #fed7aa; background: transparent; font-size: 25px; cursor: pointer; }
+.asj-mute { margin-top: 11px; padding: 0; border: 0; color: #fde68a; background: transparent; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; text-decoration: underline; }
+@keyframes asj-in { from { opacity: 0; transform: translateY(-18px) scale(.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
